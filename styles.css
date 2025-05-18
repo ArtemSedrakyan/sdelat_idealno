@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  src: url(./fonts/Raleway-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  src: url(./fonts/Raleway-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 800;
+  src: url(./fonts/Raleway-ExtraBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 800;
+  src: url(./fonts/Raleway-ExtraBold.woff2) format("woff2");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  min-width: 800px;
+  height: inherit;
+  position: relative;
+  margin: 0;
+  padding-top: 60px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1 {
+  width: 46%;
+  height: fit-content;
+  margin: 0 auto;
+  font-family: Raleway;
+  font-size: 116px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body:has(h1:hover)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(255, 255, 255, .3);
+  z-index: 1;
+}
+
+h1:after {
+  content: "*";
+}
+
+h1:hover::before {
+  content: "На самом деле нет. \AВажнее &mdash; научиться ошибаться.";
+  white-space: pre;
+  width: 46.6%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 36px 44px;
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  z-index: 1;
+  box-shadow: 0 16px ;
+  background-color: #fff;
+  font-family: "Raleway";
+  font-size: 35px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: none;
+  text-align: left;
+}
