@@ -1,26 +1,4 @@
-@font-face {
-  font-family: "Raleway";
-  font-weight: 400;
-  src: url(./fonts/Raleway-Regular.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 400;
-  src: url(./fonts/Raleway-Regular.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 800;
-  src: url(./fonts/Raleway-ExtraBold.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 800;
-  src: url(./fonts/Raleway-ExtraBold.woff2) format("woff2");
-}
+@import './font.css';
 
 *,
 *:before,
@@ -52,11 +30,11 @@ video {
 }
 
 h1 {
-  width: 46%;
+  width: 46.2%;
   height: fit-content;
   margin: 0 auto;
-  font-family: Raleway;
-  font-size: 116px;
+  font-family: Raleway, sans-serif;
+  font-size: 7em;
   line-height: 1.2;
   font-weight: 800;
   text-transform: uppercase;
